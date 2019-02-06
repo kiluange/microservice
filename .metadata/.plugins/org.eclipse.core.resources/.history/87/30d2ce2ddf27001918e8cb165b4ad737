@@ -1,0 +1,12 @@
+package com.example.demo.model;
+
+public class User {
+	
+	String name;
+	Integer idade;
+
+	public User() {
+		super();
+	}	
+
+}

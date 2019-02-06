@@ -1,0 +1,9 @@
+package com.example.core.repository;
+
+import org.springframework.data.jpa.repository.support.JpaRepositoryImplementation;
+
+import com.example.core.model.UserData;
+
+public interface UserDataRepositoryImpl extends JpaRepositoryImplementation<UserData, Long> {
+
+}

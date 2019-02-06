@@ -1,0 +1,5 @@
+package com.kiluange.api.controller;
+
+public class ServiceInstaceRestController {
+
+}

@@ -1,0 +1,34 @@
+package com.example.rest.service;
+
+import java.util.Optional;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.core.model.User;
+import com.example.core.repository.UserRepositoryImpl;
+import com.example.rest.model.UserDTO;
+
+@Service
+public class UserService {
+	
+	@Autowired
+	UserRepositoryImpl repository;
+	UserDataService dataService;
+	
+	public Optional<User> findById(Long id) {
+		return repository.findById(id);
+
+	}
+
+	public User createUser(UserDTO user) {
+		User u = repository.save(new User(user.getEmail(),user.getPassword()));
+		//ModelMapper modelMapper = new ModelMapper();
+		//UserDTO userDTO = modelMapper.map(u, UserDTO.class);
+		return u;
+	}
+	
+
+
+}

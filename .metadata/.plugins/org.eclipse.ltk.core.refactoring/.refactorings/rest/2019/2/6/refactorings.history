@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.example.rest.model.User&apos; to &apos;UserDTO&apos;&#x0A;- Original project: &apos;rest&apos;&#x0A;- Original element: &apos;com.example.rest.model.User&apos;&#x0A;- Renamed element: &apos;com.example.rest.model.UserDTO&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;User&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;com.example.rest.model{User.java[User" matchStrategy="1" name="UserDTO" qualified="false" references="true" similarDeclarations="false" stamp="1549235423653" textual="false" version="1.0"/>
+</session>

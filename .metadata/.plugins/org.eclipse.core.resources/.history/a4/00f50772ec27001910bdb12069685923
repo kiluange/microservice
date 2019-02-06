@@ -1,0 +1,12 @@
+package com.example.demo.service;
+
+import org.springframework.stereotype.Repository;
+
+import com.example.demo.model.User;
+import com.example.demo.repository.UserRepositoryImpl;
+
+public class UserService {
+	@Repository
+	UserRepositoryImpl<User> repository;
+
+}

@@ -1,0 +1,29 @@
+package com.example.demo.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/users")
+public class UserController {
+	
+	@GetMapping
+	private void getAllUsers() {
+
+	}
+	
+	@GetMapping("/{id}")
+	private String getOneUser(@PathVariable(value="id") Integer id) {
+		return id.toString();
+
+	}
+	
+	@PutMapping("/{id}")
+	private String updateUser(@PathVariable(value="id") Integer id) {
+		return id.toString();
+	}
+
+}

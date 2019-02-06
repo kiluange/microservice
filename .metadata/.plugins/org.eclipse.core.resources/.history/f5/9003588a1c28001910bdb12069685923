@@ -1,0 +1,19 @@
+package com.example.rest.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.core.model.UserData;
+import com.example.core.repository.UserDataRepositoryImpl;
+
+@Service
+public class UserDataService {
+	
+	@Autowired
+	UserDataRepositoryImpl repository;
+	
+	public void saveUserdata(UserData userData) {
+		repository.save(userData);
+	}
+
+}

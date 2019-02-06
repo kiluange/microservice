@@ -1,0 +1,15 @@
+package com.example.rest.model;
+
+import javassist.bytecode.ByteArray;
+
+public class UserDTO {
+	
+	private String name;
+	private String email;
+	private String birthday;
+	private ByteArray password;
+	private String image;
+
+		
+
+}

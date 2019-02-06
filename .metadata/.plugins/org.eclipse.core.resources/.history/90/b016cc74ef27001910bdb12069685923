@@ -1,0 +1,7 @@
+package com.example.demo.repository;
+
+import org.springframework.data.jpa.repository.support.JpaRepositoryImplementation;
+
+public abstract class UserRepositoryImpl<T> implements JpaRepositoryImplementation<T, Long> {
+
+}

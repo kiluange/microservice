@@ -1,0 +1,17 @@
+package com.example.rest.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.example.core.model.UserData;
+import com.example.core.repository.UserDataRepositoryImpl;
+
+public class UserDataService {
+	
+	@Autowired
+	UserDataRepositoryImpl repository;
+	
+	private void saveUserdata(UserData userData) {
+		repository.save(userData);
+	}
+
+}

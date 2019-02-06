@@ -1,0 +1,17 @@
+package com.example.demo.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.example.demo.model.User;
+import com.example.demo.repository.UserRepositoryImpl;
+
+public class UserService {
+	
+	@Autowired
+	UserRepositoryImpl<User> repository;
+
+	public void createUser(User user) {
+		repository.save(user);		
+	}
+
+}
